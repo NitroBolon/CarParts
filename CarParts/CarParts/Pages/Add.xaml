@@ -66,7 +66,16 @@
                     <Label Margin="0, 0, 0, 20">Imię i nazwisko</Label>
                     <TextBox Height="30" VerticalContentAlignment="Center" Name="Caddress"></TextBox>
                     <Label Margin="0, 0, 0, 20">Adres</Label>
-                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Ccar"></ComboBox>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Ccar">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <Run Text="{Binding name}" />
+                                    <Run Text="{Binding model}" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
                     <Label Margin="0, 0, 0, 20">Pojazd</Label>
                     <TextBox Height="30" VerticalContentAlignment="Center" Name="Cphone"></TextBox>
                     <Label Margin="0, 0, 0, 20">Telefon</Label>

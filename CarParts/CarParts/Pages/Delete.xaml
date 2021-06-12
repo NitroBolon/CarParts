@@ -10,6 +10,95 @@
 
     <Grid>
         <Button Content="Cofnij" HorizontalAlignment="Left" Click="Back_Click" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
-
+        <StackPanel Orientation="Horizontal" Margin="10,45,10,10">
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Usuń felgi</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Wmake">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <Run Text="{Binding name}" />
+                                    <Run Text="{Binding model}" />
+                                    <Run Text="{Binding diameter}" />
+                                    <Run Text="''" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Label Margin="0, 0, 0, 20">Wybierz felgę</Label>
+                    <Button Click="Wheel_Click">Usuń</Button>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Usuń części silnikowe</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Emake">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <Run Text="{Binding name}" />
+                                    <Run Text="{Binding model}" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Label Margin="0, 0, 0, 20">Wybierz część</Label>
+                    <Button Click="Engine_Click">Usuń</Button>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Usuń części zawieszenia</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Smake">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <Run Text="{Binding name}" />
+                                    <Run Text="{Binding model}" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Label Margin="0, 0, 0, 20">Wybierz część</Label>
+                    <Button Click="Suspension_Click">Usuń</Button>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Usuń klientów</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Cname">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <Run Text="{Binding name}" />
+                                    <Run Text="{Binding address}" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Label Margin="0, 0, 0, 20">Wybierz klienta</Label>
+                    <Button Click="Client_Click">Usuń</Button>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Usuń auto klienta</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Cmake">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <Run Text="{Binding name}" />
+                                    <Run Text="{Binding model}" />
+                                    <Run Text="{Binding year}" />
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                    <Label Margin="0, 0, 0, 20">Wybierz auto</Label>
+                    <Button Click="Car_Click">Usuń</Button>
+                </StackPanel>
+            </Border>
+        </StackPanel>
     </Grid>
 </Page>
