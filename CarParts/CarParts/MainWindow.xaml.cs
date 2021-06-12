@@ -5,6 +5,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using CarParts.DataModels;
+using CarParts.Pages;
 
 namespace CarParts
 {
@@ -32,6 +33,9 @@ namespace CarParts
             }
 
             GetCollections();
+
+            MainMenu Menu = new MainMenu();
+            this.Content = Menu;
         }
 
         private void GetCollections()

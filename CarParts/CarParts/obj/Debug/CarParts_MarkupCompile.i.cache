@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\App.xaml
-11151548125
+7-1664950934
 8-1165920300
-11-1226080155
+17-1138464306
 791180949548
-MainWindow.xaml;
+MainWindow.xaml;Pages\Clients.xaml;Pages\Update.xaml;Pages\Add.xaml;Pages\Delete.xaml;Pages\Catalog.xaml;Pages\MainMenu.xaml;
 
-False
+True
 

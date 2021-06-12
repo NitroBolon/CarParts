@@ -1,0 +1,26 @@
+﻿<Page x:Class="CarParts.Pages.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CarParts.Pages"
+      mc:Ignorable="d" Loaded="Page_Loaded"
+      d:DesignHeight="800" d:DesignWidth="1500"
+      Title="MainMenu">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="372" Stretch="Fill" Margin="340,10,0,0" VerticalAlignment="Top" Width="850">
+            <Image.Source>
+                <BitmapImage UriSource="pack://application:,,,/logo.png"/>
+            </Image.Source>
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="340,387,0,0" TextWrapping="Wrap" Text="Spare Parts Shop Management" FontSize="30" TextBlock.TextAlignment="Center" VerticalAlignment="Top" Width="850"/>
+        <StackPanel Orientation="Vertical" Margin="340,476,310,106">
+            <Button Margin="0,0,0,10" Height="25" Content="Katalog danych" Click="Catalog_Click"/>
+            <Button Margin="0,0,0,10" Height="25" Content="Dodaj dane" Click="Add_Click"/>
+            <Button Margin="0,0,0,10" Height="25" Content="Usuń dane" Click="Delete_Click"/>
+            <Button Margin="0,0,0,10" Height="25" Content="Aktualizuj dane" Click="Update_Click"/>
+            <Button Height="25" Content="Propozycje dla Klientów" Click="Clients_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

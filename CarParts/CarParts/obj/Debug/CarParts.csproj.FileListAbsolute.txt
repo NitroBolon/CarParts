@@ -39,3 +39,15 @@ C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\CarParts.csproj.C
 C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\CarParts.csproj.CopyComplete
 C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\CarParts.exe
 C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\CarParts.pdb
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\MainMenu.g.cs
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\MainMenu.baml
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Catalog.g.cs
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Catalog.baml
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Clients.g.cs
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Update.g.cs
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Add.g.cs
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Delete.g.cs
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Clients.baml
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Update.baml
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Add.baml
+C:\Users\Bolo\Desktop\bazy projekt\CarParts\CarParts\obj\Debug\Pages\Delete.baml
