@@ -10,6 +10,45 @@
 
     <Grid>
         <Button Content="Cofnij" HorizontalAlignment="Left" Click="Back_Click" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
-
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="710" Margin="10,45,0,0" VerticalAlignment="Top" Width="730">
+            <StackPanel>
+                <Label HorizontalContentAlignment="Center">Znajdź produkty dla klienta</Label>
+                <ComboBox Height="30" VerticalContentAlignment="Center" Name="Cli">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                    <Run Text="{Binding name}" />
+                                    <Run Text="{Binding address}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Label Margin="0, 0, 0, 10">Wybierz klienta</Label>
+                <Button Margin="0,10,0,10" Click="Cli_Click">Znajdź</Button>
+                <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                    <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" TextWrapping="Wrap" Name="resCli" VerticalAlignment="Top" Height="575" Width="725"/>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="710" Margin="750,45,0,0" VerticalAlignment="Top" Width="730">
+            <StackPanel>
+                <Label HorizontalContentAlignment="Center">Znajdź produkty dla auta</Label>
+                <ComboBox Height="30" Margin="0,0,0,0" VerticalContentAlignment="Center" Name="Car">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock>
+                                            <Run Text="{Binding name}" />
+                                            <Run Text="{Binding model}" />
+                            </TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Label Margin="0,10,0,0">Wybierz auto</Label>
+                <Button Margin="0,10,0,10" Click="Car_Click">Znajdź</Button>
+                <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                    <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" TextWrapping="Wrap" Name="resCar" VerticalAlignment="Top" Height="575" Width="725"/>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>
