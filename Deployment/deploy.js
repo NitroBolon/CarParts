@@ -67,11 +67,11 @@ async function run() {
     // #endregion
 
     // #region Cars
-    var car1 = { name: "Audi", model: "A7 S Line", id: "1", vin: "1002", year: 2019 };
-    var car2 = { name: "Mercedes", model: "E 220d", id: "2", vin: "1003", year: 2018 };
-    var car3 = { name: "BMW", model: "M4 Competition", id: "3", vin: "1004", year: 2018 };
-    var car4 = { name: "Volkswagen", model: "Arteon", id: "5", vin: "1005", year: 2017 };
-    var car5 = { name: "Land Rover", model: "Range Rover Evoque", id: "4", vin: "1001", year: 2014 };
+    var car1 = { name: "Audi", model: "A7 S Line", carId: "1", vin: "1002", year: 2019 };
+    var car2 = { name: "Mercedes", model: "E 220d", carId: "2", vin: "1003", year: 2018 };
+    var car3 = { name: "BMW", model: "M4 Competition", carId: "3", vin: "1004", year: 2018 };
+    var car4 = { name: "Volkswagen", model: "Arteon", carId: "5", vin: "1005", year: 2017 };
+    var car5 = { name: "Land Rover", model: "Range Rover Evoque", carId: "4", vin: "1001", year: 2014 };
 
     dbo.collection("Cars").insertOne(car1);
     dbo.collection("Cars").insertOne(car2);

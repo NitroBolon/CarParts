@@ -10,6 +10,47 @@
 
     <Grid>
         <Button Content="Cofnij" HorizontalAlignment="Left" Click="Back_Click" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Height="30"/>
-
+        <StackPanel Orientation="Horizontal" Margin="10,45,10,10">
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center">Lista wszystkich dostępnych felg</Label>
+                    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" TextWrapping="Wrap" Name="wheelsList" VerticalAlignment="Top" Height="715" Width="290"/>
+                    </ScrollViewer>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center">Lista wszystkich dostępnych części silnikowych</Label>
+                    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" TextWrapping="Wrap" Name="enginesList" VerticalAlignment="Top" Height="715" Width="290"/>
+                    </ScrollViewer>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center">Lista wszystkich dostępnych części zawieszenia</Label>
+                    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" TextWrapping="Wrap" Name="suspensionsList" VerticalAlignment="Top" Height="715" Width="290"/>
+                    </ScrollViewer>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center">Lista wszystkich klientów</Label>
+                    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" TextWrapping="Wrap" Name="clientsList" VerticalAlignment="Top" Height="715" Width="290"/>
+                    </ScrollViewer>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1" Width="290">
+                <StackPanel Orientation="Vertical">
+                    <Label HorizontalContentAlignment="Center">Lista wszystkich aut klientów</Label>
+                    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <TextBox IsReadOnly="True" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" TextWrapping="Wrap" Name="clientsCarsList" VerticalAlignment="Top" Height="715" Width="290"/>
+                    </ScrollViewer>
+                </StackPanel>
+            </Border>
+        </StackPanel>
     </Grid>
 </Page>

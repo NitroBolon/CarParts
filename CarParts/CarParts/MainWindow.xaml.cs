@@ -11,13 +11,13 @@ namespace CarParts
 {
     public partial class MainWindow : Window
     {
-        public MongoClient dbClient;
-        public IMongoDatabase dbContext;
-        public IMongoCollection<Car> Cars;
-        public IMongoCollection<Engine> EngineParts;
-        public IMongoCollection<Suspension> SuspensionParts;
-        public IMongoCollection<Wheel> Wheels;
-        public IMongoCollection<Client> Clients;
+        public MongoClient dbClient { get; set; }
+        public IMongoDatabase dbContext { get; set; }
+        public IMongoCollection<Car> Cars { get; set; }
+        public IMongoCollection<Engine> EngineParts { get; set; }
+        public IMongoCollection<Suspension> SuspensionParts { get; set; }
+        public IMongoCollection<Wheel> Wheels { get; set; }
+        public IMongoCollection<Client> Clients { get; set; }
 
         public MainWindow()
         {
