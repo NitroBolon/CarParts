@@ -18,6 +18,7 @@ namespace CarParts
         public IMongoCollection<Suspension> SuspensionParts { get; set; }
         public IMongoCollection<Wheel> Wheels { get; set; }
         public IMongoCollection<Client> Clients { get; set; }
+        public List<string> Purpose { get; set; } = new List<string>(new string[] { "sport", "casual", "terrain" });
 
         public MainWindow()
         {
@@ -38,7 +39,7 @@ namespace CarParts
             this.Content = Menu;
         }
 
-        private void GetCollections()
+        public void GetCollections()
         {
             Cars = dbContext.GetCollection<Car>("Cars");
             Wheels = dbContext.GetCollection<Wheel>("Wheels");

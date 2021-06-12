@@ -13,27 +13,78 @@
         <StackPanel Orientation="Horizontal" Margin="10,45,10,10">
             <Border BorderBrush="Black" BorderThickness="1" Width="290">
                 <StackPanel Orientation="Vertical">
-                    <Label HorizontalContentAlignment="Center">Dodaj felgi</Label>
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Dodaj felgi</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Wmake"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Producent</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Wmodel"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Model</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Wdiameter"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Średnica (cale)</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Wprice"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Cena za sztukę</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Wvin"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Pasują do aut (podaj vin oddzielając spacjami)</Label>
+                    <Button Click="Wheel_Click">Dodaj</Button>
                 </StackPanel>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Width="290">
                 <StackPanel Orientation="Vertical">
-                    <Label HorizontalContentAlignment="Center">Dodaj części silnikowe</Label>
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Dodaj części silnikowe</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Emake"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Producent</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Emodel"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Model</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Epurpose"></ComboBox>
+                    <Label Margin="0, 0, 0, 20">Przeznaczenie</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Eprice"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Cena za sztukę</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Evin"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Pasują do aut (podaj VIN'y oddzielając spacjami)</Label>
+                    <Button Click="Engine_Click">Dodaj</Button>
                 </StackPanel>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Width="290">
                 <StackPanel Orientation="Vertical">
-                    <Label HorizontalContentAlignment="Center">Dodaj części zawieszenia</Label>
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Dodaj części zawieszenia</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Smake"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Producent</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Smodel"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Model</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Spurpose"></ComboBox>
+                    <Label Margin="0, 0, 0, 20">Przeznaczenie</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Sprice"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Cena za sztukę</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Svin"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Pasują do aut (podaj VIN'y oddzielając spacjami)</Label>
+                    <Button Click="Suspension_Click">Dodaj</Button>
                 </StackPanel>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Width="290">
                 <StackPanel Orientation="Vertical">
-                    <Label HorizontalContentAlignment="Center">Dodaj klientów</Label>
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Dodaj klientów</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Cname"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Imię i nazwisko</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Caddress"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Adres</Label>
+                    <ComboBox Height="30" VerticalContentAlignment="Center" Name="Ccar"></ComboBox>
+                    <Label Margin="0, 0, 0, 20">Pojazd</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Cphone"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Telefon</Label>
+                    <Button Click="Client_Click">Dodaj</Button>
                 </StackPanel>
             </Border>
             <Border BorderBrush="Black" BorderThickness="1" Width="290">
                 <StackPanel Orientation="Vertical">
-                    <Label HorizontalContentAlignment="Center">Dodaj auto klienta</Label>
+                    <Label HorizontalContentAlignment="Center" Margin="0, 0, 0, 20">Dodaj auto klienta</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Cmake"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Marka</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Cmodel"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Model</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Cvin"></TextBox>
+                    <Label Margin="0, 0, 0, 20">VIN</Label>
+                    <TextBox Height="30" VerticalContentAlignment="Center" Name="Cyear"></TextBox>
+                    <Label Margin="0, 0, 0, 20">Rok produkcji</Label>
+                    <Button Click="Car_Click">Dodaj</Button>
                 </StackPanel>
             </Border>
         </StackPanel>
