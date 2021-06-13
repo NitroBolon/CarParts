@@ -231,7 +231,10 @@ namespace CarParts.Pages
 
             string maxId = wnd.Cars.Find(new BsonDocument()).ToListAsync().Result.Select(c => c.carId).OrderByDescending(cv => cv).FirstOrDefault();
             var vinns = wnd.Cars.Find(new BsonDocument()).ToListAsync().Result.Select(c => c.vin);
-            int maxInt = Int32.Parse(maxId) + 1;
+            
+            int maxInt = 1;
+            if(maxId != null)
+                maxInt = Int32.Parse(maxId) + 1;
 
             if (vinns.Contains(vins))
             {
