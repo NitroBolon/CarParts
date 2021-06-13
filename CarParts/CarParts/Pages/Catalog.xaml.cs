@@ -48,8 +48,8 @@ namespace CarParts.Pages
             {
                 var vin = x.carId;
                 var owner = clientList.Where(c => c.car.Contains(vin)).FirstOrDefault();
-
-                carsContent += $"{x.name} {x.model}\n{x.year}, {owner.name}\n\n";
+                string own = owner == null ? "" : owner.name;
+                carsContent += $"{x.name} {x.model}\n{x.year}, {own}\n\n";
             }
 
             foreach (var x in clientList)
